@@ -88,8 +88,7 @@ humanActivityCols <- gsub("BodyBody", "Body", humanActivityCols)
 # use new labels as column names
 colnames(humanActivity) <- humanActivityCols
 
-# Step 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable
-for each activity and each subject. #
+# Step 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject. #
 
 # group by subject and activity and summarise using mean
 humanActivityMeans <- humanActivity %>% 
